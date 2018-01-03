@@ -1,0 +1,52 @@
+main table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 799px) {
+    main table {
+        width: 80%;
+    }
+}
+
+main table tr:nth-child(odd) {
+    background-color:rgba(156,167,226,0.25);
+}
+
+main table tr:nth-child(even) {
+    background-color:rgba(156,167,226,0.25);
+}
+
+label {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;    
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+}
+
+table tr {
+    height: 4em;
+}
+
+table td {  
+    vertical-align: middle;
+    padding: 0.5em 1em;
+}
+
+table td {
+    text-align: left !important;      
+}
+
+#btn-wrap {
+    text-align: center !important;
+    margin: 0px;
+    padding: 0px;
+}

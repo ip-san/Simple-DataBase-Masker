@@ -1,0 +1,13 @@
+.patterns li {
+    text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+    .patterns li {
+        text-align: left;
+    }
+
+    .patterns input[type=checkbox] {
+        margin-left: 1em;
+    }
+}

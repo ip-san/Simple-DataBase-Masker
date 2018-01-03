@@ -1,0 +1,366 @@
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+h1 {
+    margin-left: 20px;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+input[type=text], input[type=password], input[type=number] {
+    display: inline-block;
+    height:2em;
+    margin: 2px;
+    border: 2px rgba(156,167,226,0.5) solid; 
+}
+
+input[type="radio"] , input[type="checkbox"] {
+   -webkit-transform: scale(2.0);
+   transform: scale(2.0);
+   border: 2px rgba(156,167,226,0.5) solid;
+   margin-right: 0.5em;
+}
+
+input[type=number] {
+    width: 4em;
+}
+
+.error {
+   background-color: rgba(247, 155, 185, 0.5);
+}
+
+.fadeout {
+  animation : fadeOut 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.success-messages p {
+    clear: both;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(145, 180, 147);
+    border: solid 5px rgb(115, 159, 117);
+}
+
+.error-messages p {
+    clear: both;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 155, 185);
+    border: solid 5px rgb(223, 84, 139);
+}
+
+.success-messages .close, .error-messages .close {
+   float: right;
+   font-size: 1em;
+   vertical-align: middle;
+   cursor:pointer;
+}
+
+#wrap {
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+header .container {
+    background-color: rgb(71, 83, 167);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container-small {
+    background-color: rgb(71, 83, 167);
+}
+
+nav {
+    background-color: rgb(71, 83, 167);
+}
+
+header #logo {
+    display: inline-block;
+    color: rgb(255,255,255);
+    vertical-align: middle;
+    border-right: 1px solid rgb(255, 255, 255);
+    cursor: default;
+    padding: 20px;
+}
+
+header #menu {
+    background: none;
+    cursor: pointer;
+    opacity: 0.5;
+    color: rgb(255,255,255);
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+header li {
+    border-right: 1px solid rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+header li:nth-of-type(1) {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+header li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+header li.active, header li:hover {
+    background-color: rgb(156,167,226);
+    cursor: pointer;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main ul {
+    margin: 0;
+    display: flex;
+}
+
+@media screen and (min-width: 798px) {
+    #nav-list {
+        display: flex;
+    }
+
+    header #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    input[type=text], input[type=password], input[type=number] {
+        margin: 0px;
+    }
+
+    header .container {
+        background-color: transparent;
+    }
+
+    header .container-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        opacity: 0.85;
+    }
+
+    header li {
+        border: 1px solid rgb(255, 255, 255);
+        border-bottom: 0px;
+    }
+
+    nav li a {
+        width: 100%;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    main ul {
+        display: block;
+    }
+
+    main input[type=text], input[type=password], input[type=number]  {
+        width: 100%;
+    }
+
+    .displayed-results input {
+        display: inline;
+        width: 4em;
+    }
+}
+
+main li {
+    margin: 4px;
+}
+
+.db-conns {
+    margin: 20px;
+}
+
+.db-conns ul {
+    width: 100%;
+}
+
+.db-conns li {
+    width:17%;
+    margin: 0 6px;
+}
+
+.db-conns li input[type=text],
+.db-conns li input[type=password],
+.db-conns li input[type=number] {
+    width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+    .db-conns {
+        margin: 20px;
+    }
+
+    .db-conns li {
+        width:100%;
+        margin: 0;
+    }
+}
+
+.patterns {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.patterns p {
+    margin: 4px;
+}
+
+.patterns span {
+    vertical-align: middle;
+}
+
+.transaction-setting {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.transaction-setting p {
+    margin: 4px;
+}
+
+.transaction-setting span {
+    vertical-align: middle;
+}
+
+main table {
+/*    clear: both;*/
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+main table th, main table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+main table th {
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 83, 167);
+    padding: 10px;
+}
+
+main table tr:nth-child(odd) {
+    background-color:rgba(156,167,226,0.25);
+}
+
+main table tr:nth-child(even) {
+    background-color:rgba(156,167,226,0.5);
+}
+
+.btns {
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 2px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    background-color: rgb(114, 111, 111);
+}
+
+@media screen and (max-width: 799px) {
+    .btns {
+        margin: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+a.btn:hover {
+    background-color: rgb(188, 188, 214);
+}
+
+.danger-btn {
+    background-color: rgb(208, 22, 122);
+}
+
+a.danger-btn:hover {
+    background-color: rgb(22, 122, 122);
+}
+
+.displayed-results {
+    margin: 6px 20px;
+}
+
+.displayed-results span {
+    vertical-align: middle;
+}
+
+footer {
+    height:40px;
+    width: 100%;
+    background-color: rgb(71, 83, 167);
+}
+
+
+footer.bottom {
+    position:fixed;
+    bottom:0;
+}

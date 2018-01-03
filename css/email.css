@@ -1,0 +1,7 @@
+label[for=loop_pattarn_num] {
+    margin: 6px;
+}
+
+.patterns span {
+    vertical-align: bottom; 
+}
